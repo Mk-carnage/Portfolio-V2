@@ -1,0 +1,103 @@
+body{
+  background-color: #ffffff;
+  font-family: "Mohave", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* FONT SECTION*/
+
+.major-mono-display-regular {
+  font-family: "Major Mono Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*MAIN SECTION (HEROES SECTION)*/
+h1{
+  font-family: "Mohave", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  padding:0 0 10px 0;
+  margin:0;
+  font-size: 40px;;
+}
+.name{
+  font-weight: 500;
+  color: #606BF9;
+}
+.main-container{
+  background-color: white;
+  height:100%;
+  margin:0 10%;
+  padding:0 50px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+.hero-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding-top: 100px;
+  
+}
+.my-way{
+  max-width: 400px;
+}
+.portfolio-image{
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.line{
+  margin: 4rem 7rem 0 7rem;
+}
+/*About section*/
+.about-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 20px;
+}
+.about-title{
+  align-self: center;
+}
+.about-content{
+  padding: 0 20%;
+  text-align: justify;
+}
+
+@media(max-width:600px){
+  body{
+    background-color: #ffffff;
+  }
+  .main-container{
+    box-shadow: none;
+    padding: 0; 
+  }
+  .hero-container{
+    display: flex;
+    flex-direction:column-reverse;
+    gap: 30px;
+    justify-content: center;
+    
+  }
+  .portfolio-image{
+    height: 300px;
+    border-radius: 50%;
+    padding:0;
+  }
+  .line{
+    margin: 2rem;
+  }
+  .about-container, .about-content{
+    padding:0;
+    margin:0;
+  }
+  
+  
+}
