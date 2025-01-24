@@ -1,3 +1,6 @@
+html{
+  font-family: "Mohave", serif;
+}
 body{
   background-color: #ffffff;
   font-family: "Mohave", serif;
@@ -24,8 +27,8 @@ h1,h2{
 .main-container{
   background-color: white;
   height:100%;
-  margin:0 10%;
-  padding:0 50px;
+  margin:0 5%;
+  padding:0;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
 }
 .hero-container{
@@ -77,6 +80,7 @@ h1,h2{
 .project-img{
   height: 150px;
   border-radius: 15px;
+  border: 1px solid black;
 }
 .project-card-container{
   display: flex;
@@ -88,9 +92,13 @@ h1,h2{
   justify-content: center;
   height: 300px;
   background-color: #ffffff;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  border: 1px solid black;
   padding: 10px;
+}
+.project-card:hover{
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;  
 }
 .project-title{
   padding: 10px;
@@ -98,6 +106,7 @@ h1,h2{
 }
 .visit-btn{
   text-decoration: none;
+  color: black;
   border: 2px solid black;
   padding: 10px 20px;
   margin: 10px 0 40px 10px;
@@ -105,8 +114,65 @@ h1,h2{
 }
 .visit-btn:hover{
   background-color: black;
+  transition: background-color 0.5s;
   color: white;
   border-radius: 25px;
+}
+.contact-container{
+  display: flex;
+  padding: 40px 0px;
+  background-color: #606BF9;
+  gap: 200px;
+  justify-content: space-around;
+  padding: 50px 10%;
+}
+.contact-title{
+  font-size: 128px;
+  font-weight: 600;
+  max-width: 110px;
+}
+.contact-info{
+  font-family: "Mohave", serif;
+  max-width: 500px;
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.mail{
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 15px;
+}
+.mail:hover{
+  background-color: black;
+  transition: background-color 0.5s;
+  color: white;
+  border-radius: 25px;
+}
+.footer-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+  color: white;
+  height: 150px;
+}
+.footer-link{
+  text-decoration: none;
+  padding-top: 50px;
+  color:white; 
+}
+.footer-link:hover{
+  text-decoration: underline;
+}
+.copyright{
+  background-color: black;
+  color: white;
+  padding: 0 0 20px 0;
+  margin: 0;
+  text-align: center;
 }
 
 @media(max-width:600px){
@@ -139,6 +205,10 @@ h1,h2{
   .project-card-container{
     display: flex;
     flex-direction: column;
+  }
+  .contact-container{
+    flex-direction: column;
+    gap: 10px;
   }
   
 }
