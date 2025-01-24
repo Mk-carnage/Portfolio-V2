@@ -5,17 +5,9 @@ body{
   font-weight: 300;
   font-style: normal;
 }
-/* FONT SECTION*/
-
-.major-mono-display-regular {
-  font-family: "Major Mono Display", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 /*MAIN SECTION (HEROES SECTION)*/
-h1{
+h1,h2{
   font-family: "Mohave", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -24,6 +16,7 @@ h1{
   margin:0;
   font-size: 40px;;
 }
+
 .name{
   font-weight: 500;
   color: #606BF9;
@@ -63,12 +56,57 @@ h1{
   padding: 40px;
   margin: 20px;
 }
-.about-title{
+.about-title, .title{
   align-self: center;
 }
 .about-content{
   padding: 0 20%;
   text-align: justify;
+}
+
+/*Work section*/
+
+.works-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px 0px;
+  margin: 20px 0;
+}
+.project-img{
+  height: 150px;
+  border-radius: 15px;
+}
+.project-card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+.project-card{
+  justify-content: center;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+}
+.project-title{
+  padding: 10px;
+  font-size: 25px;
+}
+.visit-btn{
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 10px 0 40px 10px;
+  border-radius: 15px;
+}
+.visit-btn:hover{
+  background-color: black;
+  color: white;
+  border-radius: 25px;
 }
 
 @media(max-width:600px){
@@ -98,6 +136,9 @@ h1{
     padding:0;
     margin:0;
   }
-  
+  .project-card-container{
+    display: flex;
+    flex-direction: column;
+  }
   
 }
