@@ -180,7 +180,7 @@ h1,h2{
   text-align: center;
 }
 
-@media(max-width:600px){
+@media(max-width:1200px){
   body{
     background-color: #ffffff;
   }
